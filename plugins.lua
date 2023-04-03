@@ -175,6 +175,16 @@ local plugins = {
       vim.diagnostic.config { virtual_text = false }
     end,
   },
+  {
+    "jinh0/eyeliner.nvim",
+    lazy = false,
+    config = function ()
+      require"eyeliner".setup {
+        highlight_on_key = true,
+        dim = true
+      }
+    end
+  }
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
