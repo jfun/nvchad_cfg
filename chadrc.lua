@@ -5,11 +5,25 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "onedark",
-  theme_toggle = { "onedark", "one_light" },
+  theme = "gruvchad",
+  theme_toggle = { "gruvchad", "one_light" },
 
   hl_override = highlights.override,
   hl_add = highlights.add,
+  
+  telescope = {
+    style = "borderless",
+  },
+  
+  -- statusline = {
+    -- theme = "default"
+  -- },
+  lsp = {
+  signature = {
+    disabled = false,
+    silent = true,
+  }
+  }
 }
 
 M.plugins = "custom.plugins"
